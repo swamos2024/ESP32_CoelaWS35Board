@@ -1,0 +1,22 @@
+--------------------------------------------------------------------------
+TO DO
+--------------------------------------------------------------------------
+ 
+Build testing for WS35 Index
+
+add split board things for WS35 Index
+
+(maybe) add functions to find coordinate from address and find the opposite of an address 
+
+ws35_index can be more efficient with how it finds pointers to CRGBs
+
+--------------------------------------------------------------------------
+COMPLETE
+--------------------------------------------------------------------------
+
+combine the following:
+
+    FastLED.addLeds<WS2812,WS35LeftBackPin,GRB>(LEDsLeftBack,WholePanelLEDCount);
+    FastLED.addLeds<WS2812,WS35RightBackPin,GRB>(LEDsRightBack,WholePanelLEDCount);
+
+    void BuildPinToCRGBIndex (CRGB* Leftback, CRGB* LeftFront, CRGB* RightFront, CRGB* RightBack);
